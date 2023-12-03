@@ -4,6 +4,7 @@ import importlib
 MODULE_NAMES = {
     "01" : 'aoc.01.trebuchet',
     "02" : 'aoc.02.cube_conundrum',
+    "03" : 'aoc.03.gear_rations',
 }
 
 if __name__ == "__main__":
