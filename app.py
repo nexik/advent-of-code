@@ -7,12 +7,13 @@ MODULE_NAMES = {
     "02" : 'aoc.02.cube_conundrum',
     "03" : 'aoc.03.gear_rations',
     "04" : 'aoc.04.scratchcards',
+    "05" : 'aoc.05.fertilizer',
 }
 
 if __name__ == "__main__":
     day = sys.argv[1]
     module = importlib.import_module(MODULE_NAMES[day])
     print(f"Day: {day}")
-    print(f"Part One result: {module.part_one(load_data_for_day('04'))}")
-    print(f"Part Two result: {module.part_two(load_data_for_day('04'))}")
+    print(f"Part One result: {module.part_one(load_data_for_day(day))}")
+    print(f"Part Two result: {module.part_two(load_data_for_day(day))}")
    
