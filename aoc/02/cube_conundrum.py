@@ -1,19 +1,19 @@
 from aoc.helpers import load_data_for_day
 import re
 
-def part_one() -> int:
+def part_one(lines: list) -> int:
     sum = 0
 
-    for line in load_data_for_day('02'):
+    for line in lines:
         if is_possible(line):
             sum += get_game_number(line)
 
     return sum
 
-def part_two() -> int:
+def part_two(lines: list) -> int:
     sum = 0
 
-    for line in load_data_for_day('02'):
+    for line in lines:
         sum += get_max_cubes(line, 'red') * get_max_cubes(line, 'blue') * get_max_cubes(line, 'green')
 
     return sum

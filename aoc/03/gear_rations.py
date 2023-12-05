@@ -2,15 +2,13 @@ from aoc.helpers import load_data_for_day
 from pprint import pprint
 import re
 
-def part_one() -> int:
-    lines = load_data_for_day('03')
+def part_one(lines: list) -> int:
     # remove trailing newline in each line
     lines = [line[:-1] for line in lines]
 
     return calculate_sum_of_gear_ratios(lines)
 
-def part_two() -> int:
-    lines = load_data_for_day('03')
+def part_two(lines: list) -> int:
     # remove trailing newline in each line
     lines = [line[:-1] for line in lines]
 
